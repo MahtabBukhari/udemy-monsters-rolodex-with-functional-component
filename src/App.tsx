@@ -20,7 +20,7 @@ const App = () => {
 
   const onSearchChange = (event:ChangeEvent<HTMLInputElement>):void => {
     const searching = event.target.value;
-    setSearchField(searching);
+    setSearchField(searching.toLocaleLowerCase());
   };
 
   useEffect(() => {
